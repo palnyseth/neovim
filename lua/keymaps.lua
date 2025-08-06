@@ -22,7 +22,7 @@ vim.keymap.set({ "n", "v" }, "<leader>d", "\"_d") -- Blackhole (deletes without 
 vim.keymap.set("i", "<C-c>", "<Esc>") -- Ctrl+C = Esc in insert mode
 
 -- Conform (format) -- TODO: Enable when added the plugin
--- vim.keymap.set("n", "<leader>f", function()
---     require("conform").format({ bufnr = 0 })
--- end)
+ vim.keymap.set("n", "<leader>f", function()
+     require("conform").format({ bufnr = 0 })
+ end)
 

@@ -20,6 +20,12 @@ return {
         })
         local cmp = require('cmp')
         local cmp_lsp = require("cmp_nvim_lsp")
+        local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+                    cmp.event:on(
+                'confirm_done',
+                cmp_autopairs.on_confirm_done()
+            )
+
         local capabilities = vim.tbl_deep_extend(
             "force",
             {},
